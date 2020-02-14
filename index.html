@@ -8,7 +8,20 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+                $('.topMenu').mouseover(function () {
+                    $('.dept01').slideDown(10);
+                });
+            });
+  $(document).ready(function () {
+                $('.topMenu').mouseleave(function () {
+                    $('.dept01').slideUp(10);
+                });
+            });
+
+  </script>
 </head>
 <body>
   <div class="header">
@@ -56,7 +69,7 @@
                   <li id="nop">sub05</li>
               </ul>
           </li>
-          <li><span>자료실</span>
+          <li ><span>자료실</span>
               <ul class="dept01">
                   <li id="nop">sub01</li>
                   <li id="nop">sub02</li>
